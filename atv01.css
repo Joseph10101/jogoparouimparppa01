@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: goldenrod;
+}
+
+.titulo{
+    background-color: goldenrod;
+    text-align: center;
+    padding: 1.5em 0;
+    color: whitesmoke;
+    border-bottom: 7px solid darkgoldenrod;
+}
+
+.titulo h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.regras{
+    background-color: rgb(197, 35, 35);
+    border-bottom: 7px solid rgb(156, 30, 30);
+    padding: 20px 0;
+}
+
+.regras h1{
+    border-bottom: 7px solid rgb(145, 23, 23);
+    font-size: 2em;
+    text-align: center;
+    padding: 7px 0 30px;
+    text-transform: uppercase;
+    color: rgb(87, 16, 16);
+}
+
+.regras ul{
+    padding: 10px 0 10px 40px;
+}
+
+.regras li{
+    margin: 10px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(87, 16, 16);
+}
+
+.jogo{
+    text-align: center;
+    padding: 40px 0;
+}
+
+label{
+    width: 4em;
+    padding-bottom: .5em;
+}
+    
+button, input{
+    width: 5em;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.jogar{
+    width: 10em;
+    padding: 20px;
+    border-bottom: 5px solid darkgoldenrod;
+    border-right: 5px solid darkgoldenrod;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#playagn{
+    margin-right: 0px;
+}
+
+#par, #impar{
+    background: darkgoldenrod;
+    color: whitesmoke;
+}
+    
+fieldset{
+    margin-bottom: 1em;
+}
+    
+#mensagem{
+    font-weight: bold;
+    font-size: 40px;
+    color: whitesmoke;
+    padding-bottom: 60px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#jogador, #par{
+    margin-right: 230px;
+}
+
+#computador, #impar{
+    margin-right: 0px;
+}
+
+fieldset > h3{
+    background-color: darkgoldenrod;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.conteudo{
+    margin-top: 50px;
+}
+
+.conteudo label{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.criadores{
+    text-align: center;
+    background-color: darkgoldenrod;
+    padding: 10px;
+    color: whitesmoke;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Par ou Ímpar Jogo - PPA</title>
+    <link href="atv01.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>PAR OU ÍMPAR</h1>
+            <h3>Vamos jogar par ou ímpar?!</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="regras">
+            <h1>Regras</h1>
+            <ul>
+                <li>O computador é ímpar e você é par;</li>
+                <li>Cada rodada, você e o computador escolherão um número de 0 a 10;</li>
+                <li>Somas ÍMPARES valem pontos para o COMPUTADOR.</li>
+                <li>Somas PARES valem pontos para VOCÊ.</li>
+                <li>Digite um número e aperte em JOGAR para iniciar.</li>
+            </ul>
+        </div>
+
+        <div class="jogo">
+            <button class="jogar" id="play" disabled>Jogar</button>
+            <button class="jogar" id="playagn" disabled>Nova Rodada</button>
+
+            <div id='mensagem'>
+
+            </div>
+
+            <fieldset>
+                <h3>Partida</h3>
+                <div class="conteudo">
+                    <label for="jogador">Você:</label>
+                    <input type="number" min="0" max="10" id="jogador" placeholder="Digite seu número" oninput="(!validity.rangeOverflow||(value=10)) && (!validity.rangeUnderflow||(value=1)) &&
+                    (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    <label for="computador">Computador:</label>
+                    <input type="text" id="computador" disabled>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h3>Pontuação</h3>
+                <div class="conteudo">
+                    <label for="par">Você:</label>
+                    <input type="text" id="par" value="0" disabled>
+                    <label for="impar">Computador:</label>
+                    <input type="text" id="impar" value="0" disabled>
+                </div>
+            </fieldset>
+        </div>
+    </main>
+
+    <header>
+        <div class="criadores">
+            <h4>Criado por José Pedro, Emily Fagundes e Kaio Vittor - 1° A Vespertino ©</h4>
+        </div>
+    </header>
+
+    <script src="atv01.js"></script>
+</body>
+
+</html>
